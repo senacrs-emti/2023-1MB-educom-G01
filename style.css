@@ -1,0 +1,16 @@
+/*cores*/
+:root{
+    --verdeoliva: #6b8e23 ;
+    --verdeescuro: #556B2F ;
+    --verdebege: #adbe7c ; 
+    --offwhite: #d1be9a;
+    --bege: #bea27c; 
+    --branco: #fff;
+    --preto: #000; 
+}
+
+/*fontes*/
+@font-face {
+    font-family: fonte;
+    src: url(the_kids_mraker/The\ Kids\ Mraker.ttf);
+}
