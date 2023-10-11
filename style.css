@@ -15,13 +15,18 @@
     src: url(the_kids_mraker/The\ Kids\ Mraker.ttf);
 }
 
+header{
+    width: 100%;
+    background-color: rgb(150, 168, 132);
+    height: 110px;
+}
 nav {
 	margin: 27px auto 0;
-
+    margin-top: -2px;
 	position: relative;
 	width: 410px;
 	height: 50px;
-	background-color: #34495e;
+	background-color: rgba(108, 120, 97, 0.495);
 	border-radius: 8px;
 	font-size: 0;
 }
@@ -61,28 +66,24 @@ a:nth-child(4) {
 nav .start-home, a:nth-child(1):hover~.animation {
 	width: 70px;
 	left: 15px;
-	background-color: #1abc9c;
+	background-color: #1abc5b;
 }
 nav .start-about, a:nth-child(2):hover~.animation {
 	width: 115px;
 	left: 97px;
-	background-color: #e74c3c;
+	background-color: var(--verdeoliva);
 }
 nav .start-blog, a:nth-child(3):hover~.animation {
 	width: 60px;
 	left: 226px;
-	background-color: #3498db;
+	background-color: var(--verdeescuro);
 }
 nav .start-portefolio, a:nth-child(4):hover~.animation {
 	width: 90px;
 	left: 290px;
-	background-color: #9b59b6;
+	background-color: var(--verdebege);
 }
-nav .start-contact, a:nth-child(5):hover~.animation {
-	width: 20px;
-	left: 200px;
-	background-color: #e67e22;
-}
+
 
 p {
     position: absolute;
@@ -93,3 +94,4 @@ p {
     font-family: 'Cherry Swash',cursive;
     font-size: 16px;
 }
+
