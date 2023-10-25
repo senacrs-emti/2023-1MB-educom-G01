@@ -9,6 +9,10 @@
     --preto: #000; 
 }
 
+.inicio {
+  background-color: var(--verdebege);
+}
+
 /*fontes*/
 @font-face {
     font-family: fonte;
@@ -89,15 +93,22 @@ p {
 
 /* Slideshow container */
 .slideshow-container {
-  max-width: 700px;
+  width: 700px;
+  background-color: green;
   position: relative;
   margin: auto;
+  margin-top: 300px;
   box-shadow: 5px 5px 1px rgba(0, 0, 0, 0.521);
 }
 
 /* Hide the images by default */
 .mySlides {
   display: none;
+}
+
+.sobre {
+  width: 500px;
+
 }
 
 /* Next & previous buttons */
