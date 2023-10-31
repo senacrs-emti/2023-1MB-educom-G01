@@ -108,7 +108,10 @@ p {
 
 .sobre {
   width: 500px;
-
+  margin-left: 15%;
+  background-color: var(--verdeescuro);
+  padding: 2%;
+  border-radius: 2%;
 }
 
 /* Next & previous buttons */
@@ -117,7 +120,7 @@ p {
   position: absolute;
   top: 50%;
   width: auto;
-  margin-top: -22px;
+  margin-top: -100px;
   padding: 16px;
   color: white;
   font-weight: bold;
