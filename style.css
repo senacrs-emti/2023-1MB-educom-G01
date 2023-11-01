@@ -29,11 +29,11 @@ header{
 }
 nav {
 	margin: 27px auto 0;
-    margin-top: -2px;
+  margin-top: 10px;
 	position: relative;
 	width: 220px;
 	height: 50px;
-	background-color: rgba(108, 120, 97, 0.495);
+	background-color: rgba(76, 122, 34, 0.495);
 	border-radius: 8px;
 	font-size: 0;
 }
@@ -80,7 +80,6 @@ nav .start-about, a:nth-child(2):hover~.animation {
 }
 
 
-
 p {
     position: absolute;
     bottom: 20px;
@@ -109,9 +108,9 @@ p {
 .sobre {
   width: 500px;
   margin-left: 15%;
-  background-color: var(--verdeescuro);
-  padding: 2%;
-  border-radius: 2%;
+  background-color: #556b2fb2;
+  padding: 20px;
+  border-radius: 10px;
 }
 
 /* Next & previous buttons */
@@ -120,25 +119,25 @@ p {
   position: absolute;
   top: 50%;
   width: auto;
-  margin-top: -100px;
+  margin-top: -135px;
   padding: 16px;
   color: white;
   font-weight: bold;
   font-size: 18px;
   transition: 0.6s ease;
-  border-radius: 0 3px 3px 0;
+  border-radius: 5px;
   user-select: none;
 }
 
 /* Position the "next button" to the right */
 .next {
   right: 0;
-  border-radius: 3px 0 0 3px;
+  border-radius: 5px;
 }
 
 /* On hover, add a black background color with a little bit see-through */
 .prev:hover, .next:hover {
-  background-color: rgba(0,0,0,0.8);
+  background-color: rgba(41, 65, 21, 0.247);
 }
 
 /* Caption text */
@@ -160,14 +159,14 @@ p {
   height: 10px;
   width: 10px;
   margin: 0 2px;
-  background-color: #bbb;
+  background-color: #6e8a4e60;
   border-radius: 50%;
   display: inline-block;
   transition: background-color 0.6s ease;
 }
 
 .active, .dot:hover {
-  background-color: #717171;
+  background-color: #6e8a4e;
 }
 
 /* Fading animation */
@@ -181,3 +180,49 @@ p {
   from {opacity: .4}
   to {opacity: 1}
 }
+
+/*cards*/
+.card {
+padding-top: 30px;
+margin: 10px;
+position: relative;
+width: 200px;
+height: 300px;
+cursor: pointer;
+transform-style: preserve-3d;
+transform-origin: center right;
+transition: transform 0.5s;
+}
+
+.card.is-flipped {
+transform: translateX(-100%) rotateY(-180deg);
+}
+
+.card__face {
+position: absolute;
+width: 200px;
+height: 300px;
+line-height: 260px;
+color: white;
+text-align: center;
+font-weight: bold;
+font-size: 40px;
+backface-visibility: hidden;
+}
+
+.card__face--front {
+width: 200px;
+height: 300px;
+}
+
+.card__face--back {
+background: slateblue;
+transform: rotateY(180deg);
+}
+
+.frenteimg, .trasimg {
+width: 200px;
+height: 300px;
+border-radius: 12px;
+}
+
