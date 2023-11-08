@@ -217,6 +217,9 @@ body {
   
 }
 
+.cardino{
+  box-shadow: 6px 6px 1px #221d27be;
+}
 
 .titulo{
   background-color: #3a3341;
@@ -253,6 +256,7 @@ body {
   background-color: inherit;
   width: 50%;
   height: fit-content;
+  
 }
 
 
