@@ -10,13 +10,14 @@
 }
 
 .inicio {
-  background-color: var(--verdebege);
+  background-image: linear-gradient(to right, #adbe7c, #90b681);
 }
+
 
 /*fontes*/
 @font-face {
     font-family: fonte;
-    src: url(the_kids_mraker/The\ Kids\ Mraker.ttf);
+    src: url(Super\ Sedan.ttf);
 }
 
 *{
@@ -24,16 +25,19 @@
 }
 header{
     width: 100%;
-    background-color: rgb(150, 168, 132);
-    height: 110px;
+    background-image: url(Monocromatico.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: 0px -100px;
+    height: 150px;
 }
 nav {
 	margin: 27px auto 0;
-  margin-top: 10px;
+  margin-top: 30px;
 	position: relative;
 	width: 220px;
 	height: 50px;
-	background-color: rgba(76, 122, 34, 0.495);
+	background-color: rgba(76, 122, 34, 0.63);
 	border-radius: 8px;
 	font-size: 0;
 }
@@ -71,7 +75,7 @@ a:hover{
 nav .start-home, a:nth-child(1):hover~.animation {
 	width: 70px;
 	left: 15px;
-	background-color: #1abc5b;
+	background-color: #2c754a;
 }
 nav .start-about, a:nth-child(2):hover~.animation {
 	width: 115px;
@@ -163,6 +167,7 @@ p {
   border-radius: 50%;
   display: inline-block;
   transition: background-color 0.6s ease;
+  margin-bottom: 50px;
 }
 
 .active, .dot:hover {
@@ -183,46 +188,164 @@ p {
 
 /*cards*/
 .card {
-padding-top: 30px;
-margin: 10px;
-position: relative;
-width: 200px;
-height: 300px;
-cursor: pointer;
-transform-style: preserve-3d;
-transform-origin: center right;
-transition: transform 0.5s;
+  margin: 15px;
+  position: relative;
+  width: 220px;
+  height: 320px;
+  cursor: pointer;
+  transform-style: preserve-3d;
+  transform-origin: center right;
+  transition: transform 0.5s;
+  border-radius: 12px;
+  box-shadow: 0px 0px 20px 0px rgba(60, 133, 28, 0.75);
+  -webkit-box-shadow: 0px 0px 20px 0px rgba(73, 109, 58, 0.75);
+  -moz-box-shadow: 0px 0px 56px 0px rgba(48, 68, 47, 0.75);
+  float: left;
 }
 
 .card.is-flipped {
-transform: translateX(-100%) rotateY(-180deg);
+  transform: translateX(-100%) rotateY(-180deg);
 }
 
 .card__face {
-position: absolute;
-width: 200px;
-height: 300px;
-line-height: 260px;
-color: white;
-text-align: center;
-font-weight: bold;
-font-size: 40px;
-backface-visibility: hidden;
+  position: absolute;
+  width: 220px;
+  height: 320px;
+  line-height: 260px;
+  color: white;
+  text-align: center;
+  font-weight: bold;
+  font-size: 40px;
+  backface-visibility: hidden;
 }
 
 .card__face--front {
-width: 200px;
-height: 300px;
+  width: 220px;
+  height: 320px;
 }
 
 .card__face--back {
-background: slateblue;
-transform: rotateY(180deg);
+  transform: rotateY(180deg);
 }
 
 .frenteimg, .trasimg {
-width: 200px;
-height: 300px;
-border-radius: 12px;
+  width: 220px;
+  height: 320px;
+  border-radius: 12px;
 }
 
+#card1 {
+  margin-left: 57px;
+}
+
+/* MAPA */
+.box-mapa {
+  position: relative;
+  z-index: 1;
+  margin: 100px auto; 
+  width: 700px;
+  height: 698px;
+  padding-top: 450px;
+  margin-left: 100px;
+}
+
+#map {
+  display: none;
+  transform: scale(1.2);
+  display: table !important;
+  margin: 0 auto;
+  float: left;
+}
+
+#map .state {
+  cursor: pointer;
+}
+
+#map .state .shape {
+  cursor: pointer;
+  -width: 0;
+}
+
+#map .state .label_icon_state {
+  fill: #fff;
+  font-family: Arial;
+  font-size: 11px;
+  line-height: 12px;
+  font-weight: normal;
+}
+
+#map .state .label_state {
+  display: none;
+  font-family: 'fonte';
+  font-size: 20px;
+}
+
+#map .mapa .state:hover .label_state {
+  display: block;
+  fill: #07532d !important;
+}
+
+#map .mapa .state .shape {
+  fill: #ddd;
+}
+
+#map .mapa .state:hover .shape {
+  fill: #c1d4ba !important;
+}
+
+#map .mapa .state .icon_state {
+  fill: #4b7e65;
+}
+
+#map .mapa .state:hover .icon_state {
+  fill: #29e503;
+}
+
+#map .mapa .state .icon_state + .label_icon_state {
+  fill: #FFF;
+}
+
+#map .mapa .state .label_icon_state {
+  fill: #666;
+}
+
+#map .mapa .state:hover .label_icon_state {
+  fill: #FFF;
+}
+
+#map .mapa .state .label_state {
+  fill: #666;
+  display: none;
+}
+
+#map .mapa .state .shape {
+  -webkit-transition: all .3s ease-in-out;
+  -moz-transition: all .3s ease-in-out;
+  -ms-transition: all .3s ease-in-out;
+  -o-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+}
+
+#map .mapa .state:hover .shape {
+  fill: #1ad102;
+}
+
+@media (max-width: 1199px) {
+  #map {
+    transform: scale(1);
+  }
+}
+@media (max-width: 991px) {
+  .box-mapa {
+    position: relative;
+    top: 0;
+    left: initial;
+    display: table;
+    margin: 0 auto;
+  }
+}
+@media (max-width: 500px) {
+  .box-mapa {
+    display: none;
+  }
+}
