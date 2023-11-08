@@ -9,8 +9,9 @@
     --preto: #000; 
 }
 
-.inicio {
-  background-image: linear-gradient(to right, #adbe7c, #90b681);
+body {
+  background: rgb(174,238,175);
+  background: radial-gradient(circle, rgb(99, 153, 100) 0%, rgb(95, 93, 60) 100%);
 }
 
 
@@ -22,7 +23,9 @@
 
 *{
 	box-sizing:border-box
+  
 }
+
 header{
     width: 100%;
     background-image: url(Monocromatico.png);
@@ -109,12 +112,17 @@ p {
   display: none;
 }
 
+.seila{
+  z-index: 999;
+}
+
 .sobre {
   width: 500px;
   margin-left: 15%;
   background-color: #556b2fb2;
   padding: 20px;
   border-radius: 10px;
+  text-align: left;
 }
 
 /* Next & previous buttons */
