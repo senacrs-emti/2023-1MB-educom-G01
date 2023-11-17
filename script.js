@@ -39,7 +39,7 @@ var cards = document.querySelectorAll('.card');
 
 //Rio Grande do Sul
 function mostrarCard(estado) {
-  var x = document.getElementById("dinors-01");
+  var x = document.getElementById("cardmaprs");
   if (x.style.display === "block") {
     x.style.display = "none";
   } else {
