@@ -54,6 +54,8 @@ nav a {
 	text-decoration: none;
 	text-transform: uppercase;
 	text-align: center;
+  font-family: 'fonte';
+  text-shadow: 3px 3px rgba(0, 0, 0, 0.598);
 	color: white;
 	cursor: pointer;
 }
@@ -83,12 +85,12 @@ nav .start-home, a:nth-child(1):hover~.animation {
 nav .start-about, a:nth-child(2):hover~.animation {
 	width: 115px;
 	left: 97px;
-	background-color: var(--verdeoliva);
+	background-color: #1a5b35;
 }
 nav .end-home, a:nth-child(2):hover~.animation {
 	width: 115px;
 	left: 97px;
-	background-color: var(--verdeoliva);
+	background-color: #1a5b35;
 }
 
 p {
@@ -125,6 +127,7 @@ p {
   margin-left: 15%;
   background-color: #3a5e33b2;
   padding: 20px;
+  text-shadow: 2px 2px rgba(0, 0, 0, 0.582);
   border-radius: 10px;
   text-align: left;
 }
@@ -165,6 +168,7 @@ p {
   bottom: 3px;
   width: 100%;
   text-align: center;
+  text-shadow: 3px 3px rgba(0, 0, 0, 0.541);
   font-family: 'fonte';
 }
 
@@ -263,7 +267,6 @@ p {
   margin: 100px auto; 
   width: 700px;
   height: 698px;
-  margin-top: 450px;
   margin-left: 100px;
 }
 
@@ -295,7 +298,8 @@ p {
 #map .state .label_state {
   display: none;
   font-family: 'fonte';
-  font-size: 20px;
+  font-size: 17px;
+  text-shadow: 3px 3px rgba(0, 0, 0, 0.427);
 }
 
 #map .mapa .state:hover .label_state {
@@ -371,12 +375,6 @@ p {
 
 /* ------------------------------------------------------------------------ */
 
-main {
-  width: 100%;
-  height: 800px;
-  display: block;
-
-}
 * {
   box-sizing: border-box;
 }
@@ -389,7 +387,7 @@ body {
 }
 
 .cardino p{
-  font-family: 'Times New Roman', Times, serif;
+  font-family: 'Cherry Swash',cursive;
   width: 360px;
   font-size: 17px;
   text-align: justify;
@@ -405,6 +403,7 @@ body {
   width: 20px;
   float: left;
   color: white;
+  -webkit-text-stroke: 1px #16280b;
 }
 
 .cardino{
