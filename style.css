@@ -246,13 +246,14 @@ p {
 
 .card h1{
   font-family: 'fonte';
-  text-shadow: 2px 2px #221d27b0;
+  text-shadow: 2px 2px #000000b0;
   font-size: 20px;
   float: left;
   color: white;
   margin-top: -229px;
   margin-left: 63px;
-  -webkit-text-stroke-width: none;
+  letter-spacing: 2px;
+  font-weight: -10%;
 }
 
 .card img {
@@ -420,4 +421,7 @@ p {
 }
 .dino7 p{
   margin-bottom: 35%;
+}
+.dino8 p{
+  margin-bottom: 160px;
 }
