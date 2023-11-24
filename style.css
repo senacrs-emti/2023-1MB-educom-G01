@@ -204,11 +204,12 @@ p {
 }
 
 /*cards*/
+
 .card {
   margin: 2%;
   position: relative;
-  width: 190px;
-  height: 290px;
+  width: 290px;
+  height: 390px;
   cursor: pointer;
   transform-style: preserve-3d;
   transform-origin: center right;
@@ -218,6 +219,33 @@ p {
   -webkit-box-shadow: 0px 0px 20px 0px rgba(73, 109, 58, 0.75);
   -moz-box-shadow: 0px 0px 56px 0px rgba(48, 68, 47, 0.75);
   float: left;
+  background-color: rgba(140,164,114,255);
+}
+
+.card p{
+  width: 270px;
+  font-size: 12px;
+  text-align: left;
+  margin-bottom: 10px;
+  text-shadow: 2px 1px #221d27b0;
+  line-height: 1.2;
+  margin-left: 8px;
+}
+
+.card h1{
+  font-family: 'fonte';
+  text-shadow: 2px 2px #221d27b0;
+  font-size: 20px;
+  float: left;
+  color: white;
+  margin-top: -229px;
+  margin-left: 63px;
+}
+
+.card img {
+  border-top-right-radius: 12px;
+  border-top-left-radius: 12px;
+  height: 160px;
 }
 
 .card.is-flipped {
@@ -226,8 +254,8 @@ p {
 
 .card__face {
   position: absolute;
-  width: 190px;
-  height: 290px;
+  width: 290px;
+  height: 390px;
   line-height: 260px;
   color: white;
   text-align: center;
@@ -237,22 +265,16 @@ p {
 }
 
 .card__face--front {
-  width: 190px;
-  height: 290px;
+  width: 290px;
+  height: 390px;
 }
 
 .card__face--back {
   transform: rotateY(180deg);
 }
 
-.frenteimg, .trasimg {
-  width: 190px;
-  height: 290px;
-  border-radius: 12px;
-}
-
 #card1 {
-  margin-left: 5%;
+  margin-left: 12%;
 }
 
 /*Cards escondidos*/
@@ -260,7 +282,7 @@ p {
   display: none;
 }
 
-/* MAPA */
+/* MAPA 
 .box-mapa {
   position: relative;
   z-index: 1;
@@ -371,4 +393,4 @@ p {
     display: none;
   }
 }
-
+*/

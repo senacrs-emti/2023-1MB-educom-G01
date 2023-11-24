@@ -1,60 +1,79 @@
 <!doctype html>
 <html lang="en">
-  <head>
 
-    <meta charset="utf-8">
-    <link rel="stylesheet" href="style.css">
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-    <title>EducaDino</title>
-  </head>
-  <body class="inicio">
-    <header>
-      <div id="box">
-        <a href="index.html">
-            <span>educadino</span>
-        </a>
+<head>
+
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="style.css">
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <title>EducaDino</title>
+</head>
+
+<body class="inicio">
+  <header>
+    <div id="box">
+      <a href="index.html">
+        <span>educadino</span>
+      </a>
+    </div>
+    <nav class="navigation">
+      <a href="index.html">Início</a>
+      <a href="timeline.html">Timeline</a>
+      <div class="animation start-home"></div>
+    </nav>
+  </header>
+  <main>
+
+    <div class="slideshow-container">
+      <div class="mySlides fade">
+        <p class="sobre">Reúne e data toda a história dos dinossauros (e consequentemente fósseis) do Brasil. A Timeline
+          apresenta, em ordem de acontecimento, ocorrências, fatos e curiosidades sobre o assunto.</p>
+        <div class="text">Timeline</div>
       </div>
-        <nav class="navigation">
-          <a href="index.html">Início</a>
-          <a href="timeline.html">Timeline</a>
-          <div class="animation start-home"></div>
-        </nav>
-    </header>
-    <main>
-  
-      <div class="slideshow-container">
-        <div class="mySlides fade">
-          <p class="sobre">Reúne e data toda a história dos dinossauros (e consequentemente fósseis) do Brasil. A Timeline apresenta, em ordem de acontecimento, ocorrências, fatos e curiosidades sobre o assunto.</p>
-          <div class="text">Timeline</div>
-        </div>
 
-        <div class="mySlides fade">
-          <p class="sobre">Temos o objetivo de catalogar, apresentar e ensinar às pessoas sobre dinossauros e fósseis, se aprofundando no conhecimento e com o intuito de despertar esse interesse em nossos leitores, além de os introduzir a um pedaço da história brasileira e do mundo. </p>
-          <div class="text">Sobre</div>
-        </div>
-        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+      <div class="mySlides fade">
+        <p class="sobre">Temos o objetivo de catalogar, apresentar e ensinar às pessoas sobre dinossauros e fósseis, se
+          aprofundando no conhecimento e com o intuito de despertar esse interesse em nossos leitores, além de os
+          introduzir a um pedaço da história brasileira e do mundo. </p>
+        <div class="text">Sobre</div>
       </div>
-      <br>
+      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+    <br>
 
 
-      <div style="text-align:center">
-        <span class="dot" onclick="currentSlide(1)"></span>
-        <span class="dot" onclick="currentSlide(2)"></span>
-        
-      </div>
-    </main>
-    
+    <div style="text-align:center">
+      <span class="dot" onclick="currentSlide(1)"></span>
+      <span class="dot" onclick="currentSlide(2)"></span>
+
+    </div>
+  </main>
+
 
   <!--Cards-->
   <!--1-->
   <div class="scene scene--card">
     <div class="card" id="card1">
       <div class="card__face card__face--front">
-      <img src="https://cdn.awsli.com.br/600x700/510/510818/produto/17994988217748830f6.jpg" class="frenteimg">
+        <img src="https://www.atlasvirtual.com.br/jpg/brasilotitan2.jpg " style="width:100%">
+        <h1>Brasilotitan</h1>
+        <p>
+          <b>Período:</b> entre 80 e 90 milhões de anos <br>
+          <b>Localização:</b> São Paulo <br>
+          <b>Tamanho:</b> 2m de altura e 8m de comprimento <br>
+          O Brasilotitan (<i>Brasilotitan memophagus</i>) foi um herbivoro da familia dos titanossaurídeos. Dado ao seu
+          ambiente de clima árido e sua dieta herbívora, o Brasilotitan se alimentava de plantas rasteiras que por causa
+          da sua baixa estatura em relação aos demais saurópodes, era mais fácil de alcançar do que o topo de árvores.
+        </p>
       </div>
       <div class="card__face card__face--back">
-        <img src="https://www.cnnbrasil.com.br/wp-content/uploads/2021/06/16368_2A0ABEBC511C8A90.jpg" class="trasimg">
+        <img src="https://f.i.uol.com.br/folha/ciencia/images/0826918.jpg" style="width:100%">
+        <h1>Brasilotitan</h1>
+        <p>O brasilotitan era um dinossauro relativamente “exótico” em relação aos outros. Isso porque sua mandíbula era
+          quadrada que indicava parentesco com o Antarctossaurus wichmannianus e Bonitasaura salgadoi, ambos dinossauros
+          argentinos, além de ser um dinossauro pequeno em comparação com os outros da mesma família e possuir
+          osteodermas nas costas que o protegia de ataques de predadores. </p>
       </div>
     </div>
   </div>
@@ -62,10 +81,24 @@
   <div class="scene scene--card">
     <div class="card">
       <div class="card__face card__face--front">
-      <img src="https://cdn.awsli.com.br/600x700/510/510818/produto/17994988217748830f6.jpg" class="frenteimg">
+        <img
+          src="https://conteudo.imguol.com.br/c/noticias/71/2018/07/18/o-dinossauro-pampadromaeus-barberenai-encontrado-na-regiao-que-corresponde-hoje-ao-interior-do-rio-grande-do-sul-1531938915146_1024x768.jpg"
+          style="width:100%">
+        <h1>Pampadromaeus</h1>
+        <p>
+          <b>Período:</b>228 milhões de anos<br>
+          <b>Localização:</b>Goiás<br>
+          <b>Tamanho:</b>2m de altura e 8m de comprimento<br>
+          Pampadromaeus (<i>Pampadromaeus Barberenai</i>) é um gênero de dinossauro basal sauropodomorfo que viveu no Período
+          Triássico e foi descoberto no Rio Grande do Sul, Brasil.
+        </p>
       </div>
       <div class="card__face card__face--back">
-        <img src="https://www.cnnbrasil.com.br/wp-content/uploads/2021/06/16368_2A0ABEBC511C8A90.jpg" class="trasimg">
+        <img
+          src="https://static.wixstatic.com/media/dc9fa5_a04f8d63de934236b5d75123001d53a0~mv2.jpg/v1/fill/w_723,h_255,al_c,lg_1,q_80,enc_auto/pampadromaeus-full.jpg"
+          style="width:100%">
+        <h1>Brasilotitan</h1>
+        <p>O município de Agudo, localizado na Depressão Central Gaúcha, é o local onde foram encontrados fósseis de alguns dos mais antigos dinossauros do mundo, entre eles o Sacisaurus agudoensis; Pampadromaeus barberenai; Macrocollum Itaquii; e Erythovenator jacuiensis.</p>
       </div>
     </div>
   </div>
@@ -73,37 +106,37 @@
   <div class="scene scene--card">
     <div class="card">
       <div class="card__face card__face--front">
-      <img src="https://cdn.awsli.com.br/600x700/510/510818/produto/17994988217748830f6.jpg" class="frenteimg">
+        <img src="https://cdn.awsli.com.br/600x700/510/510818/produto/17994988217748830f6.jpg" class="frenteimg">
       </div>
       <div class="card__face card__face--back">
         <img src="https://www.cnnbrasil.com.br/wp-content/uploads/2021/06/16368_2A0ABEBC511C8A90.jpg" class="trasimg">
       </div>
     </div>
   </div>
-    <!--4-->
-    <div class="scene scene--card">
-      <div class="card">
-        <div class="card__face card__face--front">
+  <!--4-->
+  <div class="scene scene--card">
+    <div class="card" id="card1">
+      <div class="card__face card__face--front">
         <img src="https://cdn.awsli.com.br/600x700/510/510818/produto/17994988217748830f6.jpg" class="frenteimg">
-        </div>
-        <div class="card__face card__face--back">
-          <img src="https://www.cnnbrasil.com.br/wp-content/uploads/2021/06/16368_2A0ABEBC511C8A90.jpg" class="trasimg">
-        </div>
+      </div>
+      <div class="card__face card__face--back">
+        <img src="https://www.cnnbrasil.com.br/wp-content/uploads/2021/06/16368_2A0ABEBC511C8A90.jpg" class="trasimg">
       </div>
     </div>
-    <!--5-->
-    <div class="scene scene--card">
-      <div class="card">
-        <div class="card__face card__face--front">
+  </div>
+  <!--5-->
+  <div class="scene scene--card">
+    <div class="card">
+      <div class="card__face card__face--front">
         <img src="https://cdn.awsli.com.br/600x700/510/510818/produto/17994988217748830f6.jpg" class="frenteimg">
-        </div>
-        <div class="card__face card__face--back">
-          <img src="https://www.cnnbrasil.com.br/wp-content/uploads/2021/06/16368_2A0ABEBC511C8A90.jpg" class="trasimg">
-        </div>
+      </div>
+      <div class="card__face card__face--back">
+        <img src="https://www.cnnbrasil.com.br/wp-content/uploads/2021/06/16368_2A0ABEBC511C8A90.jpg" class="trasimg">
       </div>
     </div>
+  </div>
 
-    <!--Mapa-->
+  <!--Mapa
     <div class="box-mapa">
       <svg id="map" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="700" height="700" style="display: inline;">
         <g class="mapa">
@@ -306,14 +339,14 @@
           </a>
         </g>
       </svg>
-    </div>
+    </div>-->
 
-    <!--Cards escondidos-->
-    <div id="dinors">
+  <!--Cards escondidos-->
+  <div id="dinors">
     <div class="scene scene--card">
       <div class="card cardmap" id="dinors-01">
         <div class="card__face card__face--front">
-        <img src="https://cdn.awsli.com.br/600x700/510/510818/produto/17994988217748830f6.jpg" class="frenteimg">
+          <img src="https://cdn.awsli.com.br/600x700/510/510818/produto/17994988217748830f6.jpg" class="frenteimg">
         </div>
         <div class="card__face card__face--back">
           <img src="https://www.cnnbrasil.com.br/wp-content/uploads/2021/06/16368_2A0ABEBC511C8A90.jpg" class="trasimg">
@@ -324,7 +357,7 @@
     <div class="scene scene--card">
       <div class="card cardmap" id="dinors-02">
         <div class="card__face card__face--front">
-        <img src="https://cdn.awsli.com.br/600x700/510/510818/produto/17994988217748830f6.jpg" class="frenteimg">
+          <img src="https://cdn.awsli.com.br/600x700/510/510818/produto/17994988217748830f6.jpg" class="frenteimg">
         </div>
         <div class="card__face card__face--back">
           <img src="https://www.cnnbrasil.com.br/wp-content/uploads/2021/06/16368_2A0ABEBC511C8A90.jpg" class="trasimg">
@@ -335,5 +368,6 @@
 
   <script src="script.js"></script>
   <script src="script.js"></script>
-  </body>
+</body>
+
 </html>

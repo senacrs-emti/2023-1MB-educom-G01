@@ -35,14 +35,3 @@ var cards = document.querySelectorAll('.card');
     card.classList.toggle('is-flipped');
   });
 });
-
-
-//Rio Grande do Sul
-function mostrarCard(estado) {
-  var x = document.getElementById("dinors");
-  if (x.style.display === "block") {
-    x.style.display = "none";
-  } else {
-    x.style.display = "block";
-  }
-}
