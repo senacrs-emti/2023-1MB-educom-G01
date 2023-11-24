@@ -26,6 +26,19 @@ body {
   
 }
 
+header #box{
+  width: 40%;
+  height: 80px;
+  display: block;
+  float: left;
+}
+header #box img{
+  margin-top: -10px;
+  margin-left: 80px;
+  width: 300px;
+  padding: 0px;
+}
+
 header{
     width: 100%;
     background-image: url(Monocromatico.png);
