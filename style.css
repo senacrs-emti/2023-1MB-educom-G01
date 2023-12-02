@@ -238,7 +238,7 @@ p {
 .card p{
   width: 270px;
   font-size: 15px;
-  text-align: top left;
+  text-align: left;
   text-shadow: 2px 1px #221d27b0;
   line-height: 1.2;
   margin-left: 8px;
@@ -409,24 +409,37 @@ p {
 }
 */
 
-/*config dos outros dinos
+/*config dos outros dinos*/
 .dino2 p{
-  margin-bottom: 105px;
+  margin-bottom: 95px;
+}
+.dino3 p{
+  margin-bottom: 3px;
 }
 .dino4 p{
-  margin-bottom: -4px;
+  margin-bottom: -15px;
 }
 .dino6 p{
-  margin-bottom: 54px;
+  margin-bottom: 40px;
 }
 .dino7 p{
-  margin-bottom: 35%;
+  margin-bottom: 90px;
 }
 .dino8 p{
-  margin-bottom: 160px;
+  margin-bottom: 140px;
 }
-*/
-
-.card p{
-
+.dino9 p{
+  margin-bottom: 90px;
+}
+.dino10 p{
+  margin-bottom: 20px;
+}
+.dino11 p{
+  margin-bottom: 55px;
+}
+.dino12 p{
+  margin-bottom: 35px;
+}
+.dino13 p{
+  margin-bottom: 55px;
 }
